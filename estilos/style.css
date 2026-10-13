@@ -24,7 +24,7 @@
 }
 
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   background-color:var(--fundo-principal);
   color: #222222;
 }
@@ -36,6 +36,8 @@ header {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-end;
+  position: sticky;
+  top: 0;
 }
 
 #menu ul {
@@ -175,7 +177,7 @@ article h2 {
   padding: 5px;
   padding-left: 10px;
   border-left: 5px solid var(--destaque-inverso);
-   transition: border-left .5s;
+  transition: border-left .3s;
 }
 
 .instituicao {
@@ -191,4 +193,42 @@ article h2 {
   #skill-container {
     grid-template-columns: 1fr 1fr;
   }
+}
+
+.projeto {
+  background-color: var(--fundo-principal);
+  border-radius: 7px;
+  border-left: 5px solid var(--destaque-inverso);
+  margin-bottom: 10px;
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  transition: border-left .3s;
+}
+
+.projeto:hover {
+  border-left: 10px solid var(--destaque);
+}
+
+.projeto img {
+  width: 150px;
+  height: 90px;
+  border-radius: 5px;
+}
+
+ a {
+  text-decoration: none;
+  color: var(--texto);
+}
+
+.projeto-info h3:hover {
+  text-decoration: underline;
+}
+
+footer {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--destaque);
+  color: var(--texto-inverso);
+  padding: 10px;
+  text-align: center;
 }
