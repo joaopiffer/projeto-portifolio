@@ -58,3 +58,54 @@ header {
   background-color: var(--destaque-inverso);
   color: var(--destaque);
 }
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 90vw 1fr;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+#ficha {
+  background-color: var(--fundo-card);
+  padding: 20px;
+  border-radius: 5px;
+  grid-column: 2;
+}
+
+#ficha img {
+  width: 200px;
+  border-radius: 50%;
+  border: 3px solid var(--fundo-card);
+  outline: 3px solid var(--destaque);
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+#ficha h1 {
+  margin-bottom: 10px;
+}
+
+#ficha p {
+  line-height: 1.3em;
+  text-align: justify;
+  text-indent: 10px;
+}
+
+#social {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  font-size: 1.7em;
+  gap: 20px;
+}
+
+#social a {
+  color: var(--destaque);
+  transition: color 0.4s;
+}
+
+#social a:hover {
+  color: var(--destaque-inverso);
+}
