@@ -27,15 +27,16 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-color:var(--fundo-principal);
   color: #222222;
+  transition: background-color .25s, color .3s;
 }
 
 body.escuro {
   --fundo-principal: #111111;
   --texto: #e0e0e0;
   --texto-inverso: #e7e2e2;
-  --destaque: rgb(167, 34, 255);
-  --destaque-inverso: #7917a7;
-  --fundo-card: #2c2c2c;
+  --destaque: rgb(127, 27, 194);
+  --destaque-inverso: #4d0f69;
+  --fundo-card: #1d1d1d;
 }
 
 header {
