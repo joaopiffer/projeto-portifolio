@@ -29,6 +29,15 @@ body {
   color: #222222;
 }
 
+body.escuro {
+  --fundo-principal: #111111;
+  --texto: #e0e0e0;
+  --texto-inverso: #e7e2e2;
+  --destaque: rgb(167, 34, 255);
+  --destaque-inverso: #7917a7;
+  --fundo-card: #2c2c2c;
+}
+
 header {
   background-color: var(--destaque);
   color: var(--texto);
@@ -87,12 +96,14 @@ main {
 
 #ficha h1 {
   margin-bottom: 10px;
+  color: var(--destaque);
 }
 
 #ficha p {
   line-height: 1.3em;
   text-align: justify;
   text-indent: 10px;
+  color: var(--texto);
 }
 
 #social {
@@ -189,6 +200,10 @@ article h2 {
  
 }
 
+.curso p {
+  color: var(--texto);
+}
+
 @media screen and (min-width:812px) {
   #skill-container {
     grid-template-columns: 1fr 1fr;
@@ -234,6 +249,11 @@ article h2 {
  a {
   text-decoration: none;
   color: var(--texto);
+}
+
+.projeto-info h3 {
+  color: var(--destaque-inverso);
+  margin-bottom: 5px;
 }
 
 .projeto-info h3:hover {
